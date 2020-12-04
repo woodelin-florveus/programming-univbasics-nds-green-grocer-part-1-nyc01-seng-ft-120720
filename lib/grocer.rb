@@ -14,7 +14,7 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |value|
     value.each do |key, val|
       if value[:item] == name
-        return val
+        return value[:item]
       end
     end
   end
