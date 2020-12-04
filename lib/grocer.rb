@@ -11,7 +11,9 @@ def find_item_by_name_in_collection(name, collection)
 
   collection.each do |value|
     value.each do |key, val|
-      binding.pry
+      if value[:item] == name
+        return value[:item]
+      end
     end
   end
 
