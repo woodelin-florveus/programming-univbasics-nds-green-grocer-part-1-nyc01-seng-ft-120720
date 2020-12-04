@@ -10,8 +10,8 @@ def find_item_by_name_in_collection(name, collection)
 
 
   collection.each do |value|
-    if value[:item] == name
-      return value[:item]
+    value.each do |key, val|
+      binding.pry
     end
   end
 
