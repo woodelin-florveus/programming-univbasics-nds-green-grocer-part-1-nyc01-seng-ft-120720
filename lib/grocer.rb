@@ -49,5 +49,5 @@ cart.each do |one|
   end
   new_arr << cart_item
 end
-
+new_arr
 end
