@@ -19,6 +19,9 @@ def consolidate_cart(cart)
 
   while counter < cart.length
     cart_item = find_item_by_name_in_collection(cart[counter][:item], new_arr)
+    if cart_item != nil
+    end
     counter += 1
   end
+  new_arr
 end
