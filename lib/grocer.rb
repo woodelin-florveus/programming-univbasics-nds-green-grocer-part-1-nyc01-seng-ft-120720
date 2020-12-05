@@ -47,6 +47,7 @@ cart.each do |one|
          :count => 1
        }
   end
+  new_arr << cart_item
 end
 
 end
