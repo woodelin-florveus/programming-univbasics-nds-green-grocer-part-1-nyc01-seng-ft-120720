@@ -15,7 +15,7 @@ def consolidate_cart(cart)
   return a new array of hashes
   new_arr = []
   counter = 0
-  
+
   while counter < cart.length
     cart_item = find_item_by_name_in_collection(cart[counter][:item], new_arr)
     if cart_item != nil
