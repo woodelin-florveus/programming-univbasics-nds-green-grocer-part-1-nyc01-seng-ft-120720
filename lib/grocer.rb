@@ -12,43 +12,24 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  # return a new array of hashes
-  # new_arr = []
-  # counter = 0
-  #
-  # while counter < cart.length
-  #   cart_item = find_item_by_name_in_collection(cart[counter][:item], new_arr)
-  #   if cart_item != nil
-  #     cart_item[:count] += 1
-  #   else
-  #     cart_item = {
-  #       :item => cart[counter][:item],
-  #       :price => cart[counter][:price],
-  #       :clearance => cart[counter][:clearance],
-  #       :count => 1
-  #     }
-  #     new_arr << cart_item
-  #   end
-  #   counter += 1
-  # end
-  # new_arr
-
-new_arr = []
-
-cart.each do |one|
-  binding.pry
-  cart_item = find_item_by_name_in_collection(cart[one][:item], new_arr)
-  if cart_item != nil
-    cart_item[:count] += 1
-  else
-    cart_item = {
-         :item => cart[:item],
-         :price => cart[:price],
-         :clearance => cart[:clearance],
-         :count => 1
-       }
+  return a new array of hashes
+  new_arr = []
+  counter = 0
+  
+  while counter < cart.length
+    cart_item = find_item_by_name_in_collection(cart[counter][:item], new_arr)
+    if cart_item != nil
+      cart_item[:count] += 1
+    else
+      cart_item = {
+        :item => cart[counter][:item],
+        :price => cart[counter][:price],
+        :clearance => cart[counter][:clearance],
+        :count => 1
+      }
+      new_arr << cart_item
+    end
+    counter += 1
   end
-  new_arr << cart_item
-end
-new_arr
+  new_arr
 end
