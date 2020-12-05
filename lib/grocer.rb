@@ -39,7 +39,7 @@ cart.each do |one|
   cart_item = find_item_by_name_in_collection(cart[counter][:item], new_arr)
   if cart_item != nil
     cart_item[:count] += 1
-  else 
+  else
     cart_item = {
          :item => cart[counter][:item],
          :price => cart[counter][:price],
