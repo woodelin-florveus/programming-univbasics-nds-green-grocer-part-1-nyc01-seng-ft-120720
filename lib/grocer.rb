@@ -15,7 +15,7 @@ def find_item_by_name_in_collection(name, collection)
     value.each do |key, val|
       binding.pry
       if value[:item] == name
-        return value[:item]
+        return value
       end
     end
   end
