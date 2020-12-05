@@ -41,9 +41,9 @@ cart.each do |one|
     cart_item[:count] += 1
   else
     cart_item = {
-         :item => cart[counter][:item],
-         :price => cart[counter][:price],
-         :clearance => cart[counter][:clearance],
+         :item => cart[:item],
+         :price => cart[:price],
+         :clearance => cart[:clearance],
          :count => 1
        }
   end
